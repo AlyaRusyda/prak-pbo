@@ -3,19 +3,19 @@ public class Book extends Library {
     private String genre;
     private int pageCount;
     
-    public void Book(String genre, int pageCount) {
-        String title = super.title;
-        String author = super.author;
-        int weeklyRentPrice = super.weeklyRentPrice;
+    public Book(String genre, int pageCount) {
+        super("Hujan", "Tere Liye", 12000);
         this.genre = genre;
         this.pageCount = pageCount;
     }
     
     @Override
     public void display() {
-        System.out.println("Judul\t: " + title);
-        System.out.println("Author\t: " + author);
+        System.out.println("===== Book =====");
+        System.out.println("Judul\t\t: " + title);
+        System.out.println("Author\t\t: " + author);
         System.out.println("Harga Sewa\t: " + weeklyRentPrice);
-        System.out.println("");
+        System.out.println("Genre\t\t: " + genre);
+        System.out.println("Page Count\t: " + pageCount + "\n");
     }
 }
