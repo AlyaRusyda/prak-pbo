@@ -26,7 +26,10 @@ class Pegawai {
 
 public class PegawaiApp {
     public static void main(String[] args) {
-        new Pegawai().tampilkanData();
-        new Pegawai("Budi", "Marketing", 5000000).tampilkanData();
+        Pegawai p1 = new Pegawai();
+        Pegawai p2 = new Pegawai("Budi", "Marketing", 5000000);
+
+        p1.tampilkanData();
+        p2.tampilkanData();
     }
 }
