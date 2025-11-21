@@ -1,7 +1,7 @@
 package modul8;
 
 public class Pet {
-    protected String nama;
+    private String nama;
 
     public void beriNama(String beriNama) {
         this.nama = beriNama;
@@ -33,7 +33,7 @@ class Kucing extends Pet {
     }
 
     public void data() {
-        System.out.println(nama);
+        System.out.println(panggilNama());
         System.out.println("Menyukai " + makanan);
     }
 }
@@ -55,27 +55,7 @@ class Anjing extends Pet {
     }
     
     public void data() {
-        System.out.println(nama);
+        System.out.println(panggilNama());
         System.out.println("Menyukai " + makanan);
-    }
-}
-
-class TestPolymorphism {
-    public static void main(String[] args) {
-
-        Kucing k = new Kucing();
-        Anjing a = new Anjing();
-
-        k.beriNama("TOM");
-        k.setMakanan("Ikan");
-
-        a.beriNama("BULL");
-        a.setMakanan("Daging dan Tulang");
-
-        k.data();
-        k.suara();
-        
-        a.data();
-        a.gonggong();
     }
 }

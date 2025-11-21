@@ -36,7 +36,6 @@ class BankSyariah extends BankUmum {
 
 public class DemoBank {
     public static void main(String[] args) {
-        
         Bank b1 = new BankPribadi();
         Bank b2 = new BankUmum();
         Bank b3 = new BankPasar();

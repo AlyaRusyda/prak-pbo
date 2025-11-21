@@ -18,3 +18,11 @@ class Elang extends Hewan {
         System.out.println("Elang berjalan dengan kaki tetapi lebih suka terbang");
     }
 }
+
+class Demo {
+    public static void main(String[] args) {
+        new Hewan().jalan();
+        new Kucing().jalan();
+        new Elang().jalan();
+    }
+}
