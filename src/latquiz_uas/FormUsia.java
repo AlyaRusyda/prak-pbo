@@ -19,7 +19,6 @@ public class FormUsia extends JFrame {
         JLabel lblOutput = new JLabel("");
 
         btnSubmit.addActionListener(new ActionListener() {
-            @Override
             public void actionPerformed(ActionEvent e) {
                 if (cbSetuju.isSelected()) {
                     lblOutput.setText("Data berhasil dikirim");
